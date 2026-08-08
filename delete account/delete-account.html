@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion Request & Policy - Amanat App</title>
+    <style>
+        :root {
+            --primary-green: #0b5334;
+            --dark-green: #073a24;
+            --light-bg: #f8f9fa;
+            --card-border: #e2e8f0;
+            --danger-red: #dc2626;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light-bg);
+            color: #1a202c;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header-bg {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -30px auto 40px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            padding: 32px;
+            border: 1px solid var(--card-border);
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .lang-switch button {
+            background: #edf2f7;
+            border: 1px solid #cbd5e0;
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.9em;
+            transition: all 0.2s ease;
+        }
+
+        .lang-switch button.active {
+            background: var(--primary-green);
+            color: #ffffff;
+            border-color: var(--primary-green);
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--primary-green);
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 8px;
+            margin-top: 32px;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .step-card {
+            background: #f8fafc;
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: var(--primary-green);
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            line-height: 32px;
+            margin-bottom: 12px;
+        }
+
+        .step-card img {
+            width: 100%;
+            max-width: 220px;
+            border-radius: 8px;
+            border: 1px solid #cbd5e0;
+            margin-top: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .data-box {
+            background: #fff5f5;
+            border-left: 4px solid var(--danger-red);
+            padding: 16px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        .rtl {
+            direction: rtl;
+            text-align: right;
+        }
+
+        .rtl .data-box {
+            border-left: none;
+            border-right: 4px solid var(--danger-red);
+        }
+
+        .lang-sec {
+            display: none;
+        }
+
+        .lang-sec.active {
+            display: block;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.85em;
+            color: #718096;
+            margin-top: 40px;
+            border-top: 1px solid #edf2f7;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-bg">
+    <div class="app-badge">Official App Data & Account Policy</div>
+    <h1>Amanat App - Account & Data Deletion</h1>
+    <p>Developer: SAMAD | App: Amanat (أمانات)</p>
+</div>
+
+<div class="container">
+
+    <!-- Language Selector -->
+    <div class="lang-switch">
+        <button id="btn-en" class="active" onclick="switchLang('en')">English</button>
+        <button id="btn-fr" onclick="switchLang('fr')">Français</button>
+        <button id="btn-ar" onclick="switchLang('ar')">العربية</button>
+    </div>
+
+    <!-- ENGLISH SECTION (DEFAULT FOR GOOGLE PLAY REVIEWS) -->
+    <div id="sec-en" class="lang-sec active">
+        <h2>Account Deletion Overview</h2>
+        <p>In compliance with <strong>Google Play Developer Policies</strong>, users of <strong>Amanat</strong> can request and perform full deletion of their account and all associated personal data directly within the application or by requesting support.</p>
+
+        <h2>How to Delete Your Account (Step-by-Step)</h2>
+        <p>You can permanently delete your account and all associated data directly inside the <strong>Amanat</strong> mobile app by following these 3 simple steps:</p>
+
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Step 1: Go to Profile</h3>
+                <p>Open the app and tap on the <strong>"Profile" (البروفايل)</strong> icon at the bottom right corner of the navigation bar.</p>
+                <img src="1.png" alt="Step 1: Open Profile">
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Step 2: Scroll Down</h3>
+                <p>Scroll down to the bottom section under "Account Settings & Support" and tap on <strong>"Delete Account Permanently" (إلغاء الاشتراك وحذف الحساب نهائياً)</strong>.</p>
+                <img src="2.png" alt="Step 2: Select Delete Account">
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Step 3: Confirm Deletion</h3>
+                <p>A confirmation dialog will appear. Tap on <strong>"Yes, Delete My Account" (نعم، احذف حسابي)</strong> to instantly wipe all data.</p>
+                <img src="3.png" alt="Step 3: Confirm Deletion">
+            </div>
+        </div>
+
+        <h2>Data Deleted Permanently Upon Deletion</h2>
+        <div class="data-box">
+            <p><strong>When you delete your account, the following data is immediately and permanently erased from our cloud database:</strong></p>
+            <ul>
+                <li><strong>Personal Identity:</strong> Your full name, profile details, and registered phone number.</li>
+                <li><strong>Listings & Reports:</strong> All lost or found item listings and reports you have published.</li>
+                <li><strong>Chat & Messages:</strong> All your chat messages and interaction history in community group chats.</li>
+                <li><strong>Account Credentials:</strong> Account authorization tokens and session data.</li>
+            </ul>
+        </div>
+
+        <h2>Data Retention Period & Policy</h2>
+        <p><strong>Retention Period:</strong> All personal data is deleted <strong>immediately (0 days retention)</strong> upon clicking confirm. No backup copies of deleted account data are retained on our servers.</p>
+
+        <h2>Alternative Support Request</h2>
+        <p>If you are unable to access the mobile application, you may request account deletion by navigating to your Profile in-app under <strong>"Contact Technical Support & Help"</strong>.</p>
+    </div>
+
+    <!-- FRENCH SECTION -->
+    <div id="sec-fr" class="lang-sec">
+        <h2>Suppression de compte et données</h2>
+        <p>Conformément aux <strong>règles pour les développeurs Google Play</strong>, les utilisateurs de l'application <strong>Amanat</strong> peuvent supprimer définitivement leur compte et l'ensemble de leurs données personnelles directement depuis l'application.</p>
+
+        <h2>Procédure de suppression (Étape par étape)</h2>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Étape 1 : Ouvrir le Profil</h3>
+                <p>Ouvrez l'application et appuyez sur l'icône <strong>"Profil" (البروفايل)</strong> en bas à droite de la barre de navigation.</p>
+                <img src="1.png" alt="Étape 1 : Profil">
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Étape 2 : Défiler vers le bas</h3>
+                <p>Faites défiler vers le bas jusqu'à la section paramètres, puis appuyez sur <strong>"Supprimer le compte définitivement" (إلغاء الاشتراك وحذف الحساب نهائياً)</strong>.</p>
+                <img src="2.png" alt="Étape 2 : Supprimer">
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Étape 3 : Confirmer</h3>
+                <p>Dans la boîte de dialogue de confirmation, appuyez sur <strong>"Oui, supprimer mon compte" (نعم، احذف حسابي)</strong>.</p>
+                <img src="3.png" alt="Étape 3 : Confirmation">
+            </div>
+        </div>
+
+        <h2>Données supprimées définitivement</h2>
+        <div class="data-box">
+            <p><strong>Lorsque vous supprimez votre compte, les données suivantes sont immédiatement effacées :</strong></p>
+            <ul>
+                <li><strong>Identité :</strong> Nom complet, profil et numéro de téléphone enregistré.</li>
+                <li><strong>Annonces :</strong> Toutes vos annonces d'objets perdus ou trouvés publiées.</li>
+                <li><strong>Messages :</strong> Historique de vos messages dans la discussion communautaire.</li>
+                <li><strong>Identifiants :</strong> Données de session et accès au compte.</li>
+            </ul>
+        </div>
+
+        <h2>Rétention des données</h2>
+        <p>Toutes vos données sont supprimées <strong>immédiatement (0 jour de conservation)</strong> dès la confirmation. Aucune copie n'est conservée sur nos serveurs.</p>
+    </div>
+
+    <!-- ARABIC SECTION -->
+    <div id="sec-ar" class="lang-sec rtl">
+        <h2>دليل وجميع شروط حذف الحساب والبيانات</h2>
+        <p>امتثالاً لمتطلبات وسياسات <strong>جوجل بلاي (Google Play)</strong> الخاصة بحماية بيانات المستخدمين، يتيح تطبيق <strong>أمانات (Amanat)</strong> للمطور (SAMAD) إمكانية حذف الحساب والبيانات المرتبطة به بالكامل مباشرة وبسهولة.</p>
+
+        <h2>خطوات حذف الحساب بالصور</h2>
+        <p>يمكنك حذف حسابك وكافة بياناتك نهائياً من داخل تطبيق <strong>أمانات</strong> باتباع الخطوات التالية:</p>
+
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>الخطوة 1: الدخول للبروفايل</h3>
+                <p>افتح التطبيق واضغط على أيقونة <strong>"البروفايل"</strong> في الأسفل جهة اليمين في شريط التنقل.</p>
+                <img src="1.png" alt="الخطوة 1: البروفايل">
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>الخطوة 2: النزول للأسفل</h3>
+                <p>انزل إلى أسفل الصفحة تحت قسم "إعدادات الحساب والمساعدة" واضغط على زر <strong>"إلغاء الاشتراك وحذف الحساب نهائياً"</strong>.</p>
+                <img src="2.png" alt="الخطوة 2: حذف الحساب">
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>الخطوة 3: التأكيد النهائي</h3>
+                <p>ستظهر نافذة تأكيد، اضغط على زر <strong>"نعم، احذف حسابي"</strong> لمسح كل بياناتك فوراً.</p>
+                <img src="3.png" alt="الخطوة 3: تأكيد الحذف">
+            </div>
+        </div>
+
+        <h2>البيانات التي يتم حذفها نهائياً</h2>
+        <div class="data-box">
+            <p><strong>عند الضغط على زر الحذف، يتم مسح كافة البيانات التالية فوراً وبشكل دائم من الخوادم السحابية:</strong></p>
+
+            <ul>
+                <li><strong>البيانات الشخصية:</strong> اسمك الكامل، الملف الشخصي، ورقم الهاتف المسجل.</li>
+                <li><strong>البلاغات والإعلانات:</strong> جميع بلاغات المفقودات والموجودات التي قمت بنشرها في التطبيق.</li>
+                <li><strong>محادثات الدردشة:</strong> سجل رسائلك وتفاعلاتك داخل غرفة الدردشة الجماعية.</li>
+                <li><strong>بيانات الجلسة:</strong> مفاتيح تسجيل الدخول والتعريف الخاصة بحسابك.</li>
+            </ul>
+        </div>
+
+        <h2>سياسة وفترة الاحتفاظ بالبيانات</h2>
+        <p><strong>فترة الاحتفاظ:</strong> يتم حذف جميع البيانات <strong>فوراً (0 يوم احتفاظ)</strong> بمجرد التأكيد، ولا يتم الاحتفاظ بأي نسخ احتياطية للبيانات المحذوفة على السيرفرات.</p>
+
+        <h2>طلب الدعم الفني والمساعدة</h2>
+        <p>إذا واجهتك أي مشكلة، يمكنك التوجه إلى قسم البروفايل والضغط على <strong>"اتصل بالدعم الفني والمساعدة"</strong> للتواصل معنا مباشرة.</p>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Amanat App | Developer: SAMAD. All rights reserved.
+    </div>
+
+</div>
+
+<script>
+    function switchLang(lang) {
+        document.querySelectorAll('.lang-sec').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.lang-switch button').forEach(el => el.classList.remove('active'));
+
+        document.getElementById('sec-' + lang).classList.add('active');
+        document.getElementById('btn-' + lang).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
